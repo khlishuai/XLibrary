@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "leftViewController.h"
+#import "centerViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -20,8 +23,16 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ViewController *viewC = [[ViewController alloc]init];
-    self.window.rootViewController = viewC;
+    leftViewController *left = [leftViewController new];
+    centerViewController *zoomNavigationController = [centerViewController new];
+    [zoomNavigationController setSpringAnimationOn:YES];
+    [zoomNavigationController setLeftViewController:left];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
+    [imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [zoomNavigationController setBackgroundView:imageView];
+    
+    [[self window] setRootViewController:zoomNavigationController];
     
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.

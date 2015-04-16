@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -17,9 +16,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    UIButton    *testbutton = [UIButton buttonWithType:UIButtonTypeCustom];
+    testbutton.frame = CGRectMake(100, 100, 100, 100);
+    testbutton.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:testbutton];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
