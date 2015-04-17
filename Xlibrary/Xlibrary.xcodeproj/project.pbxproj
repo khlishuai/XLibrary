@@ -20,6 +20,11 @@
 		4C660EF11ADFA57200A1A969 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C660EF01ADFA57200A1A969 /* SettingViewController.m */; };
 		4C660EF31ADFA6E000A1A969 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C660EF21ADFA6E000A1A969 /* background@2x.png */; };
 		4C7C8E3F1AE09EAF00198E2A /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8E3E1AE09EAF00198E2A /* UIView+Ext.m */; };
+		4C7C8E431AE0A77B00198E2A /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8E421AE0A77B00198E2A /* CircleView.m */; };
+		4C7C8E461AE0A85600198E2A /* CircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8E451AE0A85600198E2A /* CircleModel.m */; };
+		4C7C8E4A1AE0B25B00198E2A /* StatisticalPayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8E491AE0B25B00198E2A /* StatisticalPayController.m */; };
+		4C7C8E4D1AE0B27400198E2A /* StatisticalRemainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8E4C1AE0B27400198E2A /* StatisticalRemainViewController.m */; };
+		4C7C8E501AE0B32300198E2A /* StatisticalFloorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8E4F1AE0B32300198E2A /* StatisticalFloorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,16 @@
 		4C7C8E3C1AE09EA400198E2A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = Xlibrary/PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 		4C7C8E3D1AE09EAF00198E2A /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = SOURCE_ROOT; };
 		4C7C8E3E1AE09EAF00198E2A /* UIView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = SOURCE_ROOT; };
+		4C7C8E411AE0A77B00198E2A /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		4C7C8E421AE0A77B00198E2A /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		4C7C8E441AE0A85600198E2A /* CircleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleModel.h; sourceTree = "<group>"; };
+		4C7C8E451AE0A85600198E2A /* CircleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleModel.m; sourceTree = "<group>"; };
+		4C7C8E481AE0B25B00198E2A /* StatisticalPayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticalPayController.h; sourceTree = "<group>"; };
+		4C7C8E491AE0B25B00198E2A /* StatisticalPayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticalPayController.m; sourceTree = "<group>"; };
+		4C7C8E4B1AE0B27400198E2A /* StatisticalRemainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticalRemainViewController.h; sourceTree = "<group>"; };
+		4C7C8E4C1AE0B27400198E2A /* StatisticalRemainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticalRemainViewController.m; sourceTree = "<group>"; };
+		4C7C8E4E1AE0B32300198E2A /* StatisticalFloorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticalFloorView.h; sourceTree = "<group>"; };
+		4C7C8E4F1AE0B32300198E2A /* StatisticalFloorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticalFloorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,10 +232,36 @@
 		4C660EE21ADFA53200A1A969 /* statistical */ = {
 			isa = PBXGroup;
 			children = (
+				4C7C8E471AE0B21500198E2A /* childviewcontroller */,
+				4C7C8E401AE0A76400198E2A /* circleView */,
 				4C660EEC1ADFA56800A1A969 /* StatisticalViewController.h */,
 				4C660EED1ADFA56800A1A969 /* StatisticalViewController.m */,
+				4C7C8E4E1AE0B32300198E2A /* StatisticalFloorView.h */,
+				4C7C8E4F1AE0B32300198E2A /* StatisticalFloorView.m */,
 			);
 			path = statistical;
+			sourceTree = "<group>";
+		};
+		4C7C8E401AE0A76400198E2A /* circleView */ = {
+			isa = PBXGroup;
+			children = (
+				4C7C8E411AE0A77B00198E2A /* CircleView.h */,
+				4C7C8E421AE0A77B00198E2A /* CircleView.m */,
+				4C7C8E441AE0A85600198E2A /* CircleModel.h */,
+				4C7C8E451AE0A85600198E2A /* CircleModel.m */,
+			);
+			name = circleView;
+			sourceTree = "<group>";
+		};
+		4C7C8E471AE0B21500198E2A /* childviewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				4C7C8E481AE0B25B00198E2A /* StatisticalPayController.h */,
+				4C7C8E491AE0B25B00198E2A /* StatisticalPayController.m */,
+				4C7C8E4B1AE0B27400198E2A /* StatisticalRemainViewController.h */,
+				4C7C8E4C1AE0B27400198E2A /* StatisticalRemainViewController.m */,
+			);
+			name = childviewcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,9 +370,14 @@
 				4C660EB11ADF86F800A1A969 /* AppDelegate.m in Sources */,
 				4C660EAE1ADF86F800A1A969 /* main.m in Sources */,
 				4C660EEB1ADFA55700A1A969 /* HomeViewController.m in Sources */,
+				4C7C8E431AE0A77B00198E2A /* CircleView.m in Sources */,
 				4C660EEE1ADFA56800A1A969 /* StatisticalViewController.m in Sources */,
+				4C7C8E4A1AE0B25B00198E2A /* StatisticalPayController.m in Sources */,
+				4C7C8E501AE0B32300198E2A /* StatisticalFloorView.m in Sources */,
+				4C7C8E461AE0A85600198E2A /* CircleModel.m in Sources */,
 				4C660EF11ADFA57200A1A969 /* SettingViewController.m in Sources */,
 				4C7C8E3F1AE09EAF00198E2A /* UIView+Ext.m in Sources */,
+				4C7C8E4D1AE0B27400198E2A /* StatisticalRemainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

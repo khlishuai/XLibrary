@@ -1,32 +1,22 @@
 //
-//  StatisticalViewController.m
+//  StatisticalPayController.m
 //  Xlibrary
 //
-//  Created by mc on 15/4/16.
+//  Created by mc on 15/4/17.
 //  Copyright (c) 2015年 mc. All rights reserved.
 //
 
-#import "StatisticalViewController.h"
-#import "StatisticalFloorView.h"
-@interface StatisticalViewController ()<StatisticalFloorViewDelegate,StatisticalFloorViewDataSource>
-{
-    StatisticalFloorView *statisticalFloor;
-}
+#import "StatisticalPayController.h"
+
+@interface StatisticalPayController ()
+
 @end
 
-@implementation StatisticalViewController
+@implementation StatisticalPayController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self InitilizeFloor];
     // Do any additional setup after loading the view.
-}
-
-
--(void)InitilizeFloor
-{
-    //statisticalFloor = [[StatisticalFloorView alloc]initWithFrame:]
 }
 
 - (void)didReceiveMemoryWarning {
