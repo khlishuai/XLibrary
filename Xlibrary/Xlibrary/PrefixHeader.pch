@@ -25,7 +25,16 @@
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define FRAME(a,b,c,d) CGRectMake(a,b,c,d)
-
+#define NavaStatusHeight    64.f
+#define IMAGE_FILES(s) [UIImage imageWithContentsOfFile:s]
+#define ISNULL(s) [s isKindOfClass:[NSNull class]]
+#define Label_font(fontSize) [UIFont systemFontOfSize:fontSize];
+#define IMAGE_NAMED(name) [UIImage imageNamed:name]
+#define COLOR_DIFFERENT_VAULE(a,b,c)[UIColor colorWithRed:a/255.0 green:b/255.0 blue:c/255.0 alpha:1.0]
+#define HexRGBA(rgbValue,al) [UIColor colorWithRed:((float)((rgbValue&0xFF0000)>>16))/255.0 green:((float)((rgbValue&0xFF00)>>8))/255.0 blue:((float)(rgbValue&0xFF))/255.0 alpha:al]
+#define  NSUSERDEFAULTS(userDetaults) NSUserDefaults *userDetaults = [NSUserDefaults standardUserDefaults];
+//    数据库路径
+#define MNDB_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"GB.db"]
 
 
 

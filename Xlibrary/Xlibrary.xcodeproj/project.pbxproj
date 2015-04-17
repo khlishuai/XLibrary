@@ -19,6 +19,7 @@
 		4C660EEE1ADFA56800A1A969 /* StatisticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C660EED1ADFA56800A1A969 /* StatisticalViewController.m */; };
 		4C660EF11ADFA57200A1A969 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C660EF01ADFA57200A1A969 /* SettingViewController.m */; };
 		4C660EF31ADFA6E000A1A969 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C660EF21ADFA6E000A1A969 /* background@2x.png */; };
+		4C7C8E3F1AE09EAF00198E2A /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8E3E1AE09EAF00198E2A /* UIView+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		4C660EEF1ADFA57200A1A969 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		4C660EF01ADFA57200A1A969 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		4C660EF21ADFA6E000A1A969 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		4C7C8E3C1AE09EA400198E2A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = Xlibrary/PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		4C7C8E3D1AE09EAF00198E2A /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = SOURCE_ROOT; };
+		4C7C8E3E1AE09EAF00198E2A /* UIView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 		4C660ED51ADF8A6400A1A969 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				4C7C8E3C1AE09EA400198E2A /* PrefixHeader.pch */,
 				4C660EE31ADFA53D00A1A969 /* centerViewController.h */,
 				4C660EE41ADFA53D00A1A969 /* centerViewController.m */,
 				4C660EE51ADFA53D00A1A969 /* leftViewController.h */,
@@ -185,6 +190,8 @@
 		4C660EDD1ADF8C1A00A1A969 /* commend */ = {
 			isa = PBXGroup;
 			children = (
+				4C7C8E3D1AE09EAF00198E2A /* UIView+Ext.h */,
+				4C7C8E3E1AE09EAF00198E2A /* UIView+Ext.m */,
 			);
 			path = commend;
 			sourceTree = "<group>";
@@ -324,6 +331,7 @@
 				4C660EEB1ADFA55700A1A969 /* HomeViewController.m in Sources */,
 				4C660EEE1ADFA56800A1A969 /* StatisticalViewController.m in Sources */,
 				4C660EF11ADFA57200A1A969 /* SettingViewController.m in Sources */,
+				4C7C8E3F1AE09EAF00198E2A /* UIView+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
