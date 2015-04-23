@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bread</key>
+	<string>0x96cdcd</string>
+	<key>lunch</key>
+	<string>0xcd2626</string>
+	<key>dinner</key>
+	<string>0xeeee00</string>
+	<key>drink</key>
+	<string>0xbcee68</string>
+	<key>candy</key>
+	<string>0x4876ff</string>
+	<key>traffic</key>
+	<string>0xb23aee</string>
+	<key>grocery</key>
+	<string>0xcd3278</string>
+	<key>entertainment</key>
+	<string>0x00bfff</string>
+	<key>social</key>
+	<string>0x76eec6</string>
+	<key>cloth</key>
+	<string>0x9acd32</string>
+	<key>shopping</key>
+	<string>0xee9a00</string>
+	<key>rent</key>
+	<string>0x4f94cd</string>
+	<key>gift</key>
+	<string>0xffbbff</string>
+	<key>hospital</key>
+	<string>0xff00ff</string>
+	<key>stock</key>
+	<string>0x6c7b8b</string>
+	<key>red envelope</key>
+	<string>0x66cdaa</string>
+	<key>transfer</key>
+	<string>0x71c671</string>
+	<key>other</key>
+	<string>0x436eee</string>
+	<key>phone</key>
+	<string>0x4682b4</string>
+	<key>visa</key>
+	<string>0x757575</string>
+</dict>
+</plist>

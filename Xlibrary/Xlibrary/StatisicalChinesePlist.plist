@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bread</key>
+	<string>早餐</string>
+	<key>lunch</key>
+	<string>午餐</string>
+	<key>dinner</key>
+	<string>晚餐</string>
+	<key>drink</key>
+	<string>饮料</string>
+	<key>candy</key>
+	<string>零食</string>
+	<key>traffic</key>
+	<string>交通</string>
+	<key>grocery</key>
+	<string>日常用品</string>
+	<key>entertainment</key>
+	<string>娱乐</string>
+	<key>social</key>
+	<string>社交</string>
+	<key>cloth</key>
+	<string>衣物</string>
+	<key>shopping</key>
+	<string>购物</string>
+	<key>rent</key>
+	<string>房租</string>
+	<key>gift</key>
+	<string>礼物</string>
+	<key>hospital</key>
+	<string>医疗</string>
+	<key>stock</key>
+	<string>投资</string>
+	<key>red envelope</key>
+	<string>礼金</string>
+	<key>transfer</key>
+	<string>转账</string>
+	<key>other</key>
+	<string>其他</string>
+	<key>phone</key>
+	<string>电话费</string>
+	<key>visa</key>
+	<string>信用卡</string>
+</dict>
+</plist>
