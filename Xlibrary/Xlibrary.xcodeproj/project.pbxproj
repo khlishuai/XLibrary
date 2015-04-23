@@ -20,6 +20,11 @@
 		4C660EF11ADFA57200A1A969 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C660EF01ADFA57200A1A969 /* SettingViewController.m */; };
 		4C660EF31ADFA6E000A1A969 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C660EF21ADFA6E000A1A969 /* background@2x.png */; };
 		4C7C8E3F1AE09EAF00198E2A /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8E3E1AE09EAF00198E2A /* UIView+Ext.m */; };
+		E40EEA1C1AE4D91200E9786B /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = E40EEA1B1AE4D91200E9786B /* DetailView.m */; };
+		E4B9997E1AE5E57B00B8919A /* FootViewForDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B9997D1AE5E57B00B8919A /* FootViewForDetail.m */; };
+		E4BF38111AE0A22C00B08F61 /* UIBarButtonItem+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BF38101AE0A22C00B08F61 /* UIBarButtonItem+Ext.m */; };
+		E4BF38171AE0B0FA00B08F61 /* DataView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BF38161AE0B0FA00B08F61 /* DataView.m */; };
+		E4BF381A1AE0B7AE00B08F61 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BF38191AE0B7AE00B08F61 /* DateModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,16 @@
 		4C7C8E3C1AE09EA400198E2A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = Xlibrary/PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 		4C7C8E3D1AE09EAF00198E2A /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = SOURCE_ROOT; };
 		4C7C8E3E1AE09EAF00198E2A /* UIView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = SOURCE_ROOT; };
+		E40EEA1A1AE4D91200E9786B /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		E40EEA1B1AE4D91200E9786B /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		E4B9997C1AE5E57B00B8919A /* FootViewForDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootViewForDetail.h; sourceTree = "<group>"; };
+		E4B9997D1AE5E57B00B8919A /* FootViewForDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootViewForDetail.m; sourceTree = "<group>"; };
+		E4BF380F1AE0A22C00B08F61 /* UIBarButtonItem+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Ext.h"; sourceTree = SOURCE_ROOT; };
+		E4BF38101AE0A22C00B08F61 /* UIBarButtonItem+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Ext.m"; sourceTree = SOURCE_ROOT; };
+		E4BF38151AE0B0FA00B08F61 /* DataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataView.h; sourceTree = "<group>"; };
+		E4BF38161AE0B0FA00B08F61 /* DataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataView.m; sourceTree = "<group>"; };
+		E4BF38181AE0B7AE00B08F61 /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
+		E4BF38191AE0B7AE00B08F61 /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +207,8 @@
 			children = (
 				4C7C8E3D1AE09EAF00198E2A /* UIView+Ext.h */,
 				4C7C8E3E1AE09EAF00198E2A /* UIView+Ext.m */,
+				E4BF380F1AE0A22C00B08F61 /* UIBarButtonItem+Ext.h */,
+				E4BF38101AE0A22C00B08F61 /* UIBarButtonItem+Ext.m */,
 			);
 			path = commend;
 			sourceTree = "<group>";
@@ -201,6 +218,14 @@
 			children = (
 				4C660EE91ADFA55700A1A969 /* HomeViewController.h */,
 				4C660EEA1ADFA55700A1A969 /* HomeViewController.m */,
+				E4BF38151AE0B0FA00B08F61 /* DataView.h */,
+				E4BF38161AE0B0FA00B08F61 /* DataView.m */,
+				E4BF38181AE0B7AE00B08F61 /* DateModel.h */,
+				E4BF38191AE0B7AE00B08F61 /* DateModel.m */,
+				E40EEA1A1AE4D91200E9786B /* DetailView.h */,
+				E40EEA1B1AE4D91200E9786B /* DetailView.m */,
+				E4B9997C1AE5E57B00B8919A /* FootViewForDetail.h */,
+				E4B9997D1AE5E57B00B8919A /* FootViewForDetail.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -325,12 +350,17 @@
 			files = (
 				4C660EB41ADF86F800A1A969 /* ViewController.m in Sources */,
 				4C660EE81ADFA53D00A1A969 /* leftViewController.m in Sources */,
+				E4BF38111AE0A22C00B08F61 /* UIBarButtonItem+Ext.m in Sources */,
 				4C660EE71ADFA53D00A1A969 /* centerViewController.m in Sources */,
 				4C660EB11ADF86F800A1A969 /* AppDelegate.m in Sources */,
+				E4BF381A1AE0B7AE00B08F61 /* DateModel.m in Sources */,
+				E4BF38171AE0B0FA00B08F61 /* DataView.m in Sources */,
+				E4B9997E1AE5E57B00B8919A /* FootViewForDetail.m in Sources */,
 				4C660EAE1ADF86F800A1A969 /* main.m in Sources */,
 				4C660EEB1ADFA55700A1A969 /* HomeViewController.m in Sources */,
 				4C660EEE1ADFA56800A1A969 /* StatisticalViewController.m in Sources */,
 				4C660EF11ADFA57200A1A969 /* SettingViewController.m in Sources */,
+				E40EEA1C1AE4D91200E9786B /* DetailView.m in Sources */,
 				4C7C8E3F1AE09EAF00198E2A /* UIView+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/wgl7569/Desktop/TestDemo/XLibrary/Xlibrary/Xlibrary/PrefixHeader.pch;
 				INFOPLIST_FILE = Xlibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/wgl7569/Desktop/TestDemo/XLibrary/Xlibrary/Xlibrary/PrefixHeader.pch;
 				INFOPLIST_FILE = Xlibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

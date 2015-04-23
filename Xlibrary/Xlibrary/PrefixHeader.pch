@@ -10,13 +10,14 @@
 #define Xlibrary_PrefixHeader_pch
 #endif
 #ifdef __OBJC__
+    #import "UIBarButtonItem+Ext.h"
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "UIView+Ext.h"
 #ifdef DEBUG // 调试状态, 打开LOG功能
 #define XLog(...) NSLog(__VA_ARGS__)
 #else // 发布状态, 关闭LOG功能
-#define YYLog(...)
+#define     XLog(...)
 #endif
 
 
@@ -38,7 +39,31 @@
 
 
 
-
+#define singleton_h(name) + (instancetype)shared##name;
+#define singleton_m(name) \
+static id _instance; \
++ (id)allocWithZone:(struct _NSZone *)zone \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instance = [super allocWithZone:zone]; \
+}); \
+return _instance; \
+} \
+\
++ (instancetype)shared##name \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instance = [[self alloc] init]; \
+}); \
+return _instance; \
+} \
+\
++ (id)copyWithZone:(struct _NSZone *)zone \
+{ \
+return _instance; \
+}
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #endif
