@@ -29,6 +29,11 @@ typedef enum
 
 @property (nonatomic)_TYPE_SELECT       currentSelect;
 
+/**
+ *  开始显示数据在圆环中
+ */
+-(void)show:(NSArray*)dataarr;
 
+-(void)test:(NSArray*)dataarr;
 
 @end

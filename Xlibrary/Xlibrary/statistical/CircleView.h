@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <QuartzCore/QuartzCore.h>
+#define PI 3.14159265358979323846
 @interface CircleView : UIView
 
 
--(id)initWithPercentArray:(NSArray*)percentArr withColorArray:(NSArray*)colorArray withEndCallback:(void(^)(void))endBlock;
+//-(id)initWithPercentArray:(NSArray*)percentArr withColorArray:(NSArray*)colorArray withEndCallback:(void(^)(void))endBlock;
 
 
+-(void)setArr:(NSArray*)darat;
+
+-(void)test;
 @end

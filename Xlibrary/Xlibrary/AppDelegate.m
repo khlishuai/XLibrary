@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "leftViewController.h"
 #import "centerViewController.h"
-
+#import "XPIModel.h"
+#import "XDatabase.h"
 
 @interface AppDelegate ()
 
@@ -18,10 +19,27 @@
 @implementation AppDelegate
 
 
+
+
+#pragma mark --------链接数据库
+-(void)MNcopyDataBase
+{
+    if(![[NSFileManager defaultManager]fileExistsAtPath:MNDB_PATH]){
+        [[NSFileManager defaultManager]copyItemAtPath:[[NSBundle mainBundle]pathForResource:@"GB" ofType:@"db"] toPath:MNDB_PATH error:nil];
+        
+    }
+}
+
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+   
+    NSLog(@"%@",NSHomeDirectory());
+
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
+    [self MNcopyDataBase];
+
     
     leftViewController *left = [leftViewController new];
     centerViewController *zoomNavigationController = [centerViewController new];

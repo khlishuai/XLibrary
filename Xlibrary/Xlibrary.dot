@@ -1,0 +1,42 @@
+digraph G {
+	node [shape=box];
+	"StatisticalRemainViewController" -> {};
+	"CircleView" -> "statisticalModel";
+	"leftViewController" -> "centerViewController";
+	"leftViewController" -> "HomeViewController";
+	"leftViewController" -> "SettingViewController";
+	"leftViewController" -> "StatisticalViewController";
+	"centerViewController" -> {};
+	"ViewController" -> {};
+	"XlibraryTests" -> {};
+	"StatisticalViewController" -> "StatisticalPayController";
+	"StatisticalViewController" -> "StatisticalFloorView";
+	"StatisticalViewController" -> "StatisticalRemainViewController";
+	"statisticalModel" -> {};
+	"AppDelegate" -> "centerViewController";
+	"AppDelegate" -> "leftViewController";
+	"CircleModel" -> "CircleView";
+	"StatisticalIncomeViewController" -> {};
+	"SettingViewController" -> {};
+	"StatisticalPayController" -> "CircleModel";
+	"StatisticalPayController" -> "CircleView";
+	"StatisticalPayController" -> "StatisticalPICell";
+	"StatisticalPayController" -> "SelectTimeView";
+	"StatisticalPayController" -> "statisticalModel";
+	"StatisticalPayController" -> "IncreaseLabel";
+	"StatisticalPICell" -> {};
+	"SelectTimeView" -> {};
+	"main" -> "AppDelegate";
+	"HomeViewController" -> {};
+	"StatisticalFloorView" -> {};
+	"IncreaseLabel" -> {};
+	
+	"PrefixHeader" [color=red];
+	
+	edge [color=blue, dir=both];
+	
+	edge [color=black];
+	node [shape=plaintext];
+	"Categories" [label="UIColor+conversion\nUIView+Ext\nNSString+MyDate"];
+}
+

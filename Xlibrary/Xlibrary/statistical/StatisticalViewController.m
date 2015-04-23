@@ -18,15 +18,53 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets=NO;
     self.view.backgroundColor = [UIColor whiteColor];
     [self InitilizeFloor];
     // Do any additional setup after loading the view.
 }
 
 
+
 -(void)InitilizeFloor
 {
-    //statisticalFloor = [[StatisticalFloorView alloc]initWithFrame:]
+    statisticalFloor =[[StatisticalFloorView alloc]initWithFrame:FRAME(0, NavaStatusHeight, kScreenWidth, kScreenHeight-NavaStatusHeight)];
+    statisticalFloor.delegate=self;
+    statisticalFloor.dataSource=self;
+    statisticalFloor.baseViewController=self;
+    statisticalFloor.selectedIndex=0;
+    [self.view addSubview:statisticalFloor];
+}
+
+-(NSInteger)numberOfControllersInStatisticalView:(StatisticalFloorView *)sender
+{
+    return 3;
+}
+
+-(UIViewController*)Statistical:(StatisticalFloorView *)sender controllerAt:(NSInteger)index
+{
+    switch (index) {
+        case 0:
+        {
+            StatisticalPayController *pay = [[StatisticalPayController alloc]init];
+            return pay;
+            break;
+        }
+        case 1:
+        {
+            StatisticalPayController *pay =[[StatisticalPayController alloc]init];
+            return pay;
+            break;
+        }
+        case 2:
+        {
+            StatisticalRemainViewController *rematin = [[StatisticalRemainViewController alloc]init];
+            return rematin;
+            break;
+        }
+        default:
+            return nil;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
